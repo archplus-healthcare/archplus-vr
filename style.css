@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #eef6f5;
+    color: #173b3a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.page {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    min-height: 100vh;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.08);
+}
+
+
+/* header */
+
+.header {
+    padding: 28px 22px 20px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #e8f7f5,
+        #ffffff
+    );
+}
+
+.logo-box img {
+    width: 200px;
+    max-width: 45%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.company-name h1 {
+    margin-top: 14px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #086b66;
+}
+
+.company-name p {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #647776;
+}
+
+
+/* intro */
+
+.intro {
+    padding: 10px 24px 24px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+
+    background: #e6f5f2;
+    color: #08736c;
+
+    padding: 7px 12px;
+    border-radius: 50px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.intro h2 {
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #183d3b;
+}
+
+.intro p {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #6a7d7b;
+}
+
+
+/* documents */
+
+.documents {
+    padding: 0 18px;
+}
+
+.document-card {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #e4eeee;
+    border-radius: 17px;
+
+    background: #ffffff;
+
+    box-shadow: 0 7px 22px rgba(0,0,0,0.055);
+}
+
+.document-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #e7f6f3;
+    color: #08736c;
+
+    font-size: 20px;
+}
+
+.document-info {
+    flex: 1;
+    padding-left: 13px;
+    min-width: 150px;
+}
+
+.document-info h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #173b3a;
+}
+
+.document-info p {
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #758482;
+}
+
+
+/* view or downloads */
+
+.document-buttons {
+    width: 100%;
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 13px;
+}
+
+.view-btn,
+.download-btn {
+    flex: 1;
+
+    min-height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border-radius: 10px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.view-btn {
+    background: #edf7f6;
+    color: #086d68;
+
+    border: 1px solid #d7ebe8;
+}
+
+.download-btn {
+    background: #086d68;
+    color: #ffffff;
+
+    border: none;
+}
+
+.view-btn:hover,
+.download-btn:hover {
+    transform: translateY(-1px);
+}
+
+.contact-btn {
+    width: 100%;
+}
+
+
+/* contect */
+
+.quick-contact {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    padding: 6px 18px 24px;
+}
+
+.quick-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 14px;
+
+    border-radius: 14px;
+
+    background: #086d68;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.quick-button:hover {
+    transform: translateY(-2px);
+}
+
+.quick-button i {
+    font-size: 17px;
+}
+
+.whatsapp {
+    background: #168c68;
+}
+
+
+/* services */
+
+.service-section {
+    padding: 25px 20px;
+
+    background: #f6fbfa;
+}
+
+.service-section h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.section-subtitle {
+    margin-top: 6px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #71827f;
+}
+
+.service-grid {
+    margin-top: 18px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.service-item {
+    min-height: 75px;
+
+    padding: 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border: 1px solid #e0eeec;
+
+    border-radius: 13px;
+
+    background: white;
+}
+
+.service-item i {
+    color: #08736c;
+
+    font-size: 18px;
+
+    margin-bottom: 7px;
+}
+
+.service-item span {
+    font-size: 10px;
+
+    font-weight: 600;
+
+    color: #4f6461;
+}
+
+
+/* location */
+
+.location {
+    margin: 20px;
+
+    padding: 18px;
+
+    display: flex;
+
+    gap: 14px;
+
+    border-radius: 17px;
+
+    background: #edf8f6;
+}
+
+.location-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #086d68;
+
+    color: white;
+}
+
+.location h3 {
+    font-size: 14px;
+}
+
+.location p {
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    line-height: 1.55;
+
+    color: #667875;
+}
+
+.location a {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #086d68;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* social */
+
+.social {
+    text-align: center;
+
+    padding: 10px 20px 25px;
+}
+
+.social h3 {
+    font-size: 14px;
+}
+
+.social-buttons {
+    margin-top: 14px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.social-buttons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #edf6f5;
+
+    color: #086d68;
+
+    transition: 0.2s;
+}
+
+.social-buttons a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* footer */
+
+footer {
+    padding: 22px 20px;
+
+    text-align: center;
+
+    background: #103f3d;
+
+    color: white;
+}
+
+footer strong {
+    font-size: 14px;
+}
+
+footer p {
+    margin-top: 7px;
+
+    font-size: 10px;
+
+    opacity: 0.75;
+}
+
+footer small {
+    display: block;
+
+    margin-top: 10px;
+
+    font-size: 9px;
+
+    opacity: 0.55;
+}
+
+
+/* small mobile */
+
+@media (max-width: 400px) {
+
+    .intro h2 {
+        font-size: 21px;
+    }
+
+    .company-name h1 {
+        font-size: 20px;
+    }
+
+    .document-card {
+        padding: 13px;
+    }
+
+    .document-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .document-info h3 {
+        font-size: 13px;
+    }
+
+    .view-btn,
+    .download-btn {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#086d68">
+
+    <title>ArchPlus Healthcare | Digital Hub</title>
+
+    <meta name="description"
+          content="ArchPlus Healthcare - Medical Equipment, Healthcare and Diagnostic Services">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <!-- header -->
+
+    <header class="header">
+
+        <div class="logo-box">
+
+            <img src="assets/logo.png"
+                 alt="ArchPlus Healthcare Logo">
+
+        </div>
+
+        <div class="company-name">
+
+            <h1>ArchPlus Healthcare Pvt.Ltd.</h1>
+
+            <p>Healthcare Services at Your Doorstep</p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- intro -->
+
+    <section class="intro">
+
+        <span class="badge">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            Trusted Healthcare Services
+
+        </span>
+
+
+        <h2>
+            Your Healthcare Information,
+            All in One Place
+        </h2>
+
+
+        <p>
+
+            Access our brochures, services,
+            diagnostic information and contact
+            details quickly from your mobile.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- documents -->
+
+    <main class="documents">
+
+
+        <!-- brochure -->
+
+        <div class="document-card">
+
+            <div class="document-icon">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+            </div>
+
+
+            <div class="document-info">
+
+                <h3>Company Brochure</h3>
+
+                <p>
+                    View or download our latest brochure
+                </p>
+
+            </div>
+
+
+            <div class="document-buttons">
+
+                <a href="files/brochure.pdf"
+                   target="_blank"
+                   class="view-btn">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                    View
+
+                </a>
+
+
+                <a href="files/brochure.pdf"
+                   download
+                   class="download-btn">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- services -->
+
+        <div class="document-card">
+
+            <div class="document-icon">
+
+                <i class="fa-solid fa-hospital"></i>
+
+            </div>
+
+
+            <div class="document-info">
+
+                <h3>Our Services</h3>
+
+                <p>
+                    Explore our healthcare services
+                </p>
+
+            </div>
+
+
+            <div class="document-buttons">
+
+                <a href="files/services.pdf"
+                   target="_blank"
+                   class="view-btn">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                    View
+
+                </a>
+
+
+                <a href="files/services.pdf"
+                   download
+                   class="download-btn">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- diagnostic -->
+
+        <div class="document-card">
+
+            <div class="document-icon">
+
+                <i class="fa-solid fa-microscope"></i>
+
+            </div>
+
+
+            <div class="document-info">
+
+                <h3>Diagnostic Test Services</h3>
+
+                <p>
+                    View our available diagnostic tests
+                </p>
+
+            </div>
+
+
+            <div class="document-buttons">
+
+                <a href="files/diagnostic-tests.pdf"
+                   target="_blank"
+                   class="view-btn">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                    View
+
+                </a>
+
+
+                <a href="files/diagnostic-tests.pdf"
+                   download
+                   class="download-btn">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- contect -->
+
+        <div class="document-card">
+
+            <div class="document-icon">
+
+                <i class="fa-solid fa-address-card"></i>
+
+            </div>
+
+
+            <div class="document-info">
+
+                <h3>Contact Details</h3>
+
+                <p>
+                    Save ArchPlus Healthcare contact
+                </p>
+
+            </div>
+
+
+            <div class="document-buttons">
+
+                <button onclick="saveContact()"
+                        class="download-btn contact-btn">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Save Contact
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- contects -->
+
+    <section class="quick-contact">
+
+
+        <a href="tel:+919723891128"
+           class="quick-button">
+
+            <i class="fa-solid fa-phone"></i>
+
+            Call Now
+
+        </a>
+
+
+
+        <a href="https://wa.me/919723891128"
+           target="_blank"
+           class="quick-button whatsapp">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            WhatsApp
+
+        </a>
+
+    </section>
+
+
+
+    <!-- services -->
+
+    <section class="service-section">
+
+        <h2>Healthcare Services</h2>
+
+        <p class="section-subtitle">
+
+            Medical equipment and healthcare support
+
+        </p>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-item">
+
+                <i class="fa-solid fa-lungs"></i>
+
+                <span>
+                    Oxygen Machine on rent
+                </span>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <i class="fa-solid fa-bed"></i>
+
+                <span>
+                    Hospital Beds on rent
+                </span>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <i class="fa-solid fa-house-medical"></i>
+
+                <span>
+                    ICU Setup at Home
+                </span>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <i class="fa-solid fa-wheelchair"></i>
+
+                <span>
+                    Mobility Equipment
+                </span>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <i class="fa-solid fa-heart-pulse"></i>
+
+                <span>
+                    All Patient Care Equipment
+                </span>
+
+            </div>
+
+
+            <div class="service-item">
+
+                <i class="fa-solid fa-stethoscope"></i>
+
+                <span>
+                    Diagnostic Test Services
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- location -->
+
+    <section class="location">
+
+        <div class="location-icon">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+        </div>
+
+
+        <div>
+
+            <h3>Visit Our Office</h3>
+
+            <p>
+
+                4th Floor, C/2, Ankur Commercial Centre,
+                Near Ankur Bus Stand, Naranpura,
+                Ahmedabad, Gujarat 380013
+
+            </p>
+
+
+            <a href="https://www.google.com/maps/search/?api=1&query=ArchPlus+Healthcare+Ahmedabad"
+               target="_blank">
+
+                Get Directions
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- social -->
+
+    <section class="social">
+
+        <h3>Connect With ArchPlus Healthcare</h3>
+
+
+        <div class="social-buttons">
+
+
+            <a href="https://www.aphcpl.in/"
+               target="_blank">
+
+                <i class="fa-solid fa-globe"></i>
+
+            </a>
+
+
+            <a href="https://www.instagram.com/archplushealthcare/"
+               target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="https://www.facebook.com/share/1BaUnovWPE/"
+               target="_blank">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- footer -->
+
+    <footer>
+
+        <strong>
+            ArchPlus Healthcare Pvt. Ltd.
+        </strong>
+
+
+        <p>
+
+            Medical Equipment • Healthcare Services
+            • Diagnostic Test Services
+
+        </p>
+
+
+        <small>
+
+            © <span id="year"></span>
+            ArchPlus Healthcare.
+            All Rights Reserved.
+
+        </small>
+
+    </footer>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
